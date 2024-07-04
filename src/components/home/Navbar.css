@@ -1,0 +1,20 @@
+.nav{
+    min-width: 85vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav h2{
+    color: #FF7E35;
+}
+#home{
+    color: #FF7E35;
+}
+.nav ul{
+    display: flex;
+    list-style-type: none;
+    width: 60%;
+    justify-content: space-evenly;
+}

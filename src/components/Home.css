@@ -1,0 +1,48 @@
+/* @font-face {
+  font-family: 'Heavitas';
+  src: url('fonts/Heavitas.ttf') format('truetype');
+} */
+
+.container {
+  display: flex;
+  font-family: 'Heavitas', sans-serif;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh; /* Adjusted to full viewport height */
+  background-color: black;
+  color: white;
+  overflow: auto; /* Enable scrolling */
+  position: relative;
+}
+
+.box1 img{
+  
+  width: 30%;
+}
+.box1{
+  display: flex;
+  align-items: center;
+  min-width: 80vw;
+  min-height: 70vh;
+  margin: 70px auto;
+  position: relative;
+   /* justify-content: space-between; */
+}
+
+
+.shadow{
+  width: 90%;
+  height: 120%;
+  left: 15%;
+  position: absolute;
+  background-color: #44444482;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shadow img{
+  width: 45%;
+  z-index: 22;
+}

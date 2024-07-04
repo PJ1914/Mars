@@ -1,0 +1,58 @@
+.nextpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; Full width */
+    /* padding: 200px 0; Ensure space for scrolling */
+  }
+
+  .card-2 {
+    
+    background-color: #444444;
+    /* opacity: 50%; */
+    /* margin: 0 auto; */
+    /* padding: 20px; */
+    box-sizing: border-box;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+    min-height: 40%;
+  }
+  .card-2 img{
+    width: 60%;
+
+  }
+  
+  .Mask-1{
+    position: absolute;
+    margin-right: 900px;
+    width: 80px;
+    border-radius: 60%;
+    margin-bottom: 24%;
+    cursor: pointer;
+  }
+  
+  .Mask-2{
+    position: absolute;
+    margin-right: 900px;
+    width: 80px;
+    margin-bottom: 8%;
+    cursor: pointer;
+  }
+  
+  .Mask-3{
+    position: absolute;
+    margin-right: 900px;
+    width: 80px;
+    margin-bottom: -7%;
+    cursor: pointer;
+  }
+  
+  .Mask-4{
+    position: absolute;
+    margin-right: 900px;
+    width: 80px;
+    margin-bottom: -23%;
+    cursor: pointer;
+  }
