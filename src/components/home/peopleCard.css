@@ -3,8 +3,9 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 75%;
-  min-height: 80vh;
+  width: 800px;
+  min-height: 70vh;
+  border-radius: 5%;
 }
 
 .card-2 .text{
@@ -12,5 +13,9 @@
 }
 .card-2 img{
   width: 20%;
+}
+
+.pic-dina{
+  border-radius: 10%;
 }
   
