@@ -1,20 +1,45 @@
-.nav{
-    min-width: 85vw;
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  
+  .nav {
+    width: 85%;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
-}
-
-.nav h2{
-    color: #FF7E35;
-}
-#home{
-    color: #FF7E35;
-}
-.nav ul{
+  }
+  
+  .nav ul {
     display: flex;
     list-style-type: none;
-    width: 60%;
-    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .nav li {
+    padding: 10px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    transition: color 0.3s; 
+  }
+  
+  
+  
+  .nav a:hover {
+    color: #FF7E35;
+  }
+  
+.logo {
+    height: 50px;
+    
 }
+  

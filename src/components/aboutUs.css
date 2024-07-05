@@ -1,0 +1,47 @@
+.main{
+    margin: 5%;
+    background-color: rgba(235, 230, 230, 0.3);
+    border-radius: 2%;
+    padding: 8%;
+}
+
+.about-heading, .note-heading, .vision-heading, .mission-heading{
+    color: orange;
+}
+
+.right-side{
+    margin-top: 7%;
+}
+
+.container1{
+    margin-right: 40px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container3{
+    margin: 12%;
+    background-color: rgba(235, 230, 230, 0.3);
+    border-radius: 4%;
+    padding: 8%;
+
+}
+
+.vision, .mission {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.icons{
+    display: flex;
+    gap: 10px;
+    background-color: rgba(235, 230, 230, 0.3);
+    margin: 1%;
+    padding: 2%;
+    border-radius: 2%;
+}
