@@ -1,0 +1,12 @@
+/* App.css */
+.main {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Add more global styles as needed */
+  
