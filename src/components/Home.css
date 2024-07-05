@@ -16,22 +16,21 @@
   position: relative;
 }
 
-.box1 img{
-  
+.box1 img {
   width: 30%;
 }
-.box1{
+
+.box1 {
   display: flex;
   align-items: center;
   min-width: 80vw;
   min-height: 70vh;
   margin: 70px auto;
   position: relative;
-   /* justify-content: space-between; */
+  /* justify-content: space-between; */
 }
 
-
-.shadow{
+.shadow {
   width: 90%;
   height: 120%;
   left: 15%;
@@ -42,29 +41,25 @@
   align-items: center;
 }
 
-.shadow img{
+.shadow img {
   width: 45%;
   z-index: 22;
 }
 
-.people{
+.people {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   min-width: 70%;
 }
-.people ul{
+
+.people ul {
   list-style-type: none;
   cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   min-height: 80vh;
-}
-.people ul img{
-  border-radius: 50%;
-  border: 3px solid #FF7E35;
-  width: 60%;
 }
 
 .people ul li {
@@ -85,4 +80,102 @@
 .people ul img:hover {
   transform: scale(1.1);
   border-color: #FFF;
+}
+
+/* Upcoming Section */
+.upcoming-section {
+  width: 100%;
+  padding: 20px 0;
+  background-color: black;
+  color: white;
+  align-items: center;
+  text-align: center;
+}
+
+#head {
+  align-self: center;
+}
+
+.upcoming-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+
+.blogs h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: orange;
+}
+
+.blog-item {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+.blog-item img {
+  width: 80px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.blog-item span {
+  font-size: 18px;
+}
+
+/* How We Work Section */
+.how-we-work {
+  width: 80%;
+  margin: 50px auto;
+  color: white;
+  text-align: left;
+}
+
+.how-we-work h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.how-we-work p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  width: 48%;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card p {
+  font-size: 18px;
+  padding: 15px 0;
 }
