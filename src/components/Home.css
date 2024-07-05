@@ -39,6 +39,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -300px;
 }
 
 .shadow img {
@@ -87,13 +88,13 @@
   width: 100%;
   padding: 20px 0;
   background-color: black;
-  color: white;
-  align-items: center;
-  text-align: center;
+  color: white; 
 }
 
-#head {
-  align-self: center;
+.upcoming-section h1{
+  margin-bottom: 20px;
+  color: orange;
+  margin-left: 150px;
 }
 
 .upcoming-content {
@@ -149,33 +150,56 @@
 .how-we-work h1 {
   font-size: 36px;
   margin-bottom: 20px;
+  color: orange;
 }
 
 .how-we-work p {
   font-size: 18px;
   line-height: 1.6;
-  margin-bottom: 40px;
 }
 
 .project-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 20px;
 }
 
 .project-card {
-  width: 48%;
-  background: #333;
-  border-radius: 10px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
 .project-card img {
-  width: 100%;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
 }
 
 .project-card p {
-  font-size: 18px;
-  padding: 15px 0;
+  font-size: 16px;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
 }

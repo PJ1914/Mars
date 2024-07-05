@@ -3,30 +3,30 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  width: 800px;
+  width: 900px;
   min-height: 70vh;
   border-radius: 5%;
-  padding: 20px; /* Added padding for spacing inside the card */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow for depth */
-  margin: 20px auto; /* Centered card */
-  color: white; /* Ensuring text color contrasts with background */
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  margin: 100px; 
+  color: white; 
 }
 
 .card-2 .text {
-  width: 55%; /* Adjusted width for better layout */
-  margin-left: 20px; /* Added margin for spacing from the image */
-  text-align: left; /* Left align text for better readability */
+  width: 55%; 
+  margin-left: 20px; 
+  text-align: right;
 }
 
 .card-2 img {
-  width: 25%; /* Adjusted width for better scaling */
-  max-width: 150px; /* Added max-width to prevent too large images */
-  border-radius: 10%; /* Smooth border for images */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for image */
+  width: 25%; 
+  max-width: 150px; 
+  border-radius: 10%; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .pic-dina {
-  border-radius: 10%; /* Ensuring consistent image styling */
+  border-radius: 10%; 
 }
 
 /* Additional media query for responsiveness */

@@ -9,6 +9,7 @@ export const ShadowBox = (props) => {
             <h2>Visit last project</h2>
         </div>
         <img src={props.img} alt="camera" />
+        
     </div>
   )
 }

@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Home.css";
 import Navbar from "./home/Navbar";
 import marsB from "../assets/mars.png";
 import cameraCrew from "../assets/team.png";
+import AevumJagat from "../assets/aevum jagat.jpg";
 import mask1 from "../assets/D87A2067 3.png";
 import mask2 from "../assets/Mask group-1.png";
 import mask3 from "../assets/Mask group-2.png";
@@ -13,15 +14,36 @@ import calleVapor from "../assets/image 8.png";
 import meeMeemulu from "../assets/image 9.png";
 import Data from "./personData/Data";
 import UpcomingCard from "./home/UpcomingCard";
-import UpcomingImg1 from "../assets/upcomg.png"; // Replace with the correct path to your image
-//import BlogImg1 from "../assets/blog-img1.png"; // Replace with the correct path to your image
+import UpcomingImg1 from "../assets/upcomg.png";
 
 const Home = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
   const [clickPerson, setClickPerson] = useState(0);
+
+  const carouselData = [
+    {
+      heading: "To Make timeless films intended for a better tomorrow",
+      text: "Crafting Cinematic Dreams Where Stories Come to Life",
+      img: cameraCrew,
+    },
+    {
+      heading: "Here is the Aevum Jagat Video",
+      text: "...",
+      img: AevumJagat,
+    },
+  ];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % carouselData.length);
+    }, 3000);
+
+    return () => clearInterval(timer);
+  }, [carouselData.length]);
 
   function handlePerson(event) {
     const n = event.target.id;
-    setClickPerson(+n); // Convert string to integer
+    setClickPerson(+n);
   }
 
   return (
@@ -29,35 +51,39 @@ const Home = () => {
       <Navbar />
       <div className="box1">
         <img src={marsB} alt="Mars Image" />
-        <ShadowBox
-          heading={"To Make timeless films intended for a better tomorrow"}
-          text={"Crafting Cinematic Dreams Where Stories Come to Life"}
-          img={cameraCrew}
-        />
+        <div className="carousel-shadowbox">
+          <ShadowBox
+            heading={carouselData[currentSlide].heading}
+            text={carouselData[currentSlide].text}
+            img={carouselData[currentSlide].img}
+          />
+        </div>
       </div>
 
-      <h1>PARTNER TESTIMONIALS</h1>
-      <div className="people">
-        <ul>
-          <li onClick={handlePerson}>
-            <img src={mask1} alt="m1" id="0" />
-          </li>
-          <li onClick={handlePerson}>
-            <img src={mask2} alt="m2" id="1" />
-          </li>
-          <li onClick={handlePerson}>
-            <img src={mask3} alt="m3" id="2" />
-          </li>
-          <li onClick={handlePerson}>
-            <img src={mask4} alt="m4" id="3" />
-          </li>
-        </ul>
-        <PeopleCard
-          name={Data[clickPerson].name}
-          sub={Data[clickPerson].sub}
-          text={Data[clickPerson].text}
-          img={Data[clickPerson].img}
-        />
+      <div className="people-container">
+        <h1>PARTNER TESTIMONIALS</h1>
+        <div className="people">
+          <ul>
+            <li onClick={handlePerson}>
+              <img src={mask1} alt="m1" id="0" />
+            </li>
+            <li onClick={handlePerson}>
+              <img src={mask2} alt="m2" id="1" />
+            </li>
+            <li onClick={handlePerson}>
+              <img src={mask3} alt="m3" id="2" />
+            </li>
+            <li onClick={handlePerson}>
+              <img src={mask4} alt="m4" id="3" />
+            </li>
+          </ul>
+          <PeopleCard
+            name={Data[clickPerson].name}
+            sub={Data[clickPerson].sub}
+            text={Data[clickPerson].text}
+            img={Data[clickPerson].img}
+          />
+        </div>
       </div>
 
       <div className="upcoming-section">
@@ -71,7 +97,6 @@ const Home = () => {
           <div className="blogs">
             <h2>Latest Blogs</h2>
             <div className="blog-item">
-              {/* {<img src={BlogImg1} alt="Blog 1" />} */}
               <span>Aevumjagut Full Movie 2024</span>
             </div>
             <div className="blog-item">

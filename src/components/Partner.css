@@ -1,0 +1,67 @@
+.partner-main{
+    background-image: url('Mars/src/assets/back.png');
+    background-color: black;
+}
+
+.heading-partner{
+    color: orange;
+}
+
+.container-partner{
+    display: flex;
+    margin: 5%;
+    background-color: rgba(235, 230, 230, 0.3);
+    border-radius: 2%;
+    padding: 8%;
+}
+
+.content-partner{
+    margin-right: 5%;
+}
+.partner-images{
+    background-color: rgb(255, 255, 255);
+}
+
+.people-partner-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-partners-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.people-partner{
+    margin: 3%;
+    padding: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+.partner-info{
+    margin: 3%;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.our-partners{
+    margin: 5%;
+    padding: 1%;
+}
+
+.partner{
+    margin: 2%;
+    padding: 1%;
+    font-size: 10px;
+}
+.p-images{
+    width: 120px;
+}
+
+.pro-image{
+    height: 300px;
+}
