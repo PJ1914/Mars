@@ -37,7 +37,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % carouselData.length);
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [carouselData.length]);
@@ -90,7 +90,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="upcoming-section">
+      {/* <div className="upcoming-section">
         <h1 id="head">UP COMING</h1>
         <div className="upcoming-content">
           <UpcomingCard
@@ -108,7 +108,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
+      <UpcomingCard />
 
       <div className="how-we-work">
         <h1>HOW WE WORK</h1>
