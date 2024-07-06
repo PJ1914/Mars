@@ -15,7 +15,7 @@ import meeMeemulu from "../assets/image 9.png";
 import Data from "./personData/Data";
 import UpcomingCard from "./home/UpcomingCard";
 import UpcomingImg1 from "../assets/upcomg.png";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -49,16 +49,11 @@ const Home = () => {
 
   return (
     <div className="container">
-      <Navbar />
       <div className="box1">
         <img src={marsB} alt="Mars Image" />
         <div className="carousel-shadowbox">
           <TransitionGroup>
-            <CSSTransition
-              key={currentSlide}
-              timeout={500}
-              classNames="slide"
-            >
+            <CSSTransition key={currentSlide} timeout={500} classNames="slide">
               <ShadowBox
                 heading={carouselData[currentSlide].heading}
                 text={carouselData[currentSlide].text}
