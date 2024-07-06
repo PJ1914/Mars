@@ -152,11 +152,20 @@
   color: white;
   text-align: left;
 }
+.work-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.work-container > p {
+  width: calc(44% - 1rem);
+}
 
 .how-we-work h1 {
-  font-size: 36px;
+  font-size: 48px;
   margin-bottom: 20px;
-  color: orange;
+  color: var(--brand-color);
 }
 
 .how-we-work p {
@@ -168,6 +177,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  width: calc(50% - 1rem);
 }
 
 .project-card {

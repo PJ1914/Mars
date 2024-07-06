@@ -7,6 +7,7 @@ import About from "./components/aboutUs";
 import Partner from "./components/Partner";
 import Navbar from "./components/home/Navbar";
 import Img1 from "./assets/Home/Mask group.png";
+import Footer from "./components/Common/Footer";
 function App() {
   return (
     <Router>
@@ -19,6 +20,7 @@ function App() {
           <Route path="/partners" element={<Partner />} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 }
