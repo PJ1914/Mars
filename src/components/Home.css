@@ -219,6 +219,17 @@
   transition: transform 500ms, opacity 500ms;
 }
 
+.icons a {
+  color: orange; 
+  margin: 0 10px; 
+  transition: color 0.3s; 
+}
+
+.icons a:hover {
+  color: darkorange; 
+}
+
+
 /* Mobile-specific adjustments */
 @media (max-width: 768px) {
   .box1 {
@@ -333,3 +344,4 @@
     margin-top: 10px;
   }
 }
+
