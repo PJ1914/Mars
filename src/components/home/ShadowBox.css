@@ -1,0 +1,37 @@
+
+  .shadow-button {
+    background-color: #FF7E35;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+  
+  .shadow-button:hover {
+    background-color: #FFA500;
+  }
+
+  
+  @media (max-width: 768px) {
+    .shadow {
+      width: 80vw;
+      height: 50vw;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #44444482;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .shadow img {
+      width: 40vw;
+      margin-top: 10px;
+    }
+  }
+  

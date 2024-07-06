@@ -1,15 +1,16 @@
 import React from 'react';
-// import './ShadowBox.css';
+import './ShadowBox.css'; // Ensure to import the CSS file
+
 export const ShadowBox = (props) => {
   return (
     <div className="shadow">
         <div>
             <h1>{props.heading}</h1>
             <p>{props.text}</p>
-            <h2>Visit last project</h2>
+            <a href="your-link-here" className="shadow-button">Click Here</a>
         </div>
         <img src={props.img} alt="camera" />
-        
     </div>
   )
 }
+
