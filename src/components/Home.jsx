@@ -16,6 +16,8 @@ import Data from "./personData/Data";
 import UpcomingCard from "./home/UpcomingCard";
 import UpcomingImg1 from "../assets/upcomg.png";
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { FaTwitter, FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { MdEmail, MdCall } from 'react-icons/md';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -135,25 +137,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="footer">
-        <div className="social-icons">
-          <a href="#">
-            <i className="fab fa-youtube"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-facebook"></i>
-          </a>
+      <div className="icons">
+          <a href="#" target="_blank" rel="noopener noreferrer"><FaTwitter size={30} /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><FaFacebook size={30} /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} /></a>
+          <a href="#"><MdEmail size={30} /></a>
+          <a href="#"><MdCall size={30} /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><FaYoutube size={30} /></a>
+          <a href="#" target="_blank" rel="noopener noreferrer"><FaLinkedin size={30} /></a>
         </div>
-      </div>
     </div>
   );
 };
