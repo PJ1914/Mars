@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --brand-color: #ff7e35;
+  --white-color: #e9ecef;
+  --text-black-color: #282727;
+  --dark-white: #ffffff;
+}
+
+h1{
+    font-size: 48px;
+}

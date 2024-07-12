@@ -1,15 +1,12 @@
 /* Base Styles */
 .container {
   display: flex;
-  font-family: 'Heavitas', sans-serif;
+  font-family: "Heavitas", sans-serif;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
-  background-color: black;
-  color: white;
   overflow: auto; /* Enable scrolling */
-  position: relative;
+  color: var(--dark-white);
 }
 
 .box1 {
@@ -30,13 +27,27 @@
   height: 120%;
   left: 15%;
   position: absolute;
-  background-color: #44444482;
+  background-color: #32323282;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: -300px;
+  padding: 0 2rem;
+  border-radius: 10px;
+  gap: 2rem;
+}
+.people-container {
+  margin-block: 8rem;
+}
+#head {
+  color: var(--brand-color);
 }
 
+.shadow > div > p {
+  font-size: 20px;
+  color: var(--text-color-white);
+  margin-bottom: 2rem;
+}
 .shadow img {
   width: 45%;
   z-index: 22;
@@ -46,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  min-width: 70%;
+  gap: 2rem;
 }
 
 .people ul {
@@ -67,7 +78,7 @@
 
 .people ul img {
   border-radius: 50%;
-  border: 3px solid #FF7E35;
+  border: 3px solid #ff7e35;
   width: 80px;
   height: 80px;
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -75,21 +86,21 @@
 
 .people ul img:hover {
   transform: scale(1.1);
-  border-color: #FFF;
+  border-color: #fff;
 }
 
 /* Upcoming Section */
 .upcoming-section {
   width: 100%;
   padding: 20px 0;
-  background-color: black;
-  color: white; 
+  color: white;
 }
 
-.upcoming-section h1{
+.upcoming-section h1 {
   margin-bottom: 20px;
   color: orange;
   margin-left: 150px;
+  margin-bottom: 5rem;
 }
 
 .upcoming-content {
@@ -141,11 +152,20 @@
   color: white;
   text-align: left;
 }
+.work-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: space-between;
+}
+.work-container > p {
+  width: calc(44% - 1rem);
+}
 
 .how-we-work h1 {
-  font-size: 36px;
+  font-size: 48px;
   margin-bottom: 20px;
-  color: orange;
+  color: var(--brand-color);
 }
 
 .how-we-work p {
@@ -157,6 +177,7 @@
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
+  width: calc(50% - 1rem);
 }
 
 .project-card {
@@ -258,6 +279,7 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+    padding-inline: 2rem !important;
   }
 
   .shadow {
@@ -271,7 +293,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0 2rem;
   }
 
   .shadow img {

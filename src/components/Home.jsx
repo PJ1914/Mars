@@ -15,8 +15,8 @@ import calleVapor from "../assets/image 8.png";
 import meeMeemulu from "../assets/image 9.png";
 import Data from "./personData/Data";
 import UpcomingCard from "./home/UpcomingCard";
-import UpcomingImg1 from "../assets/upcomg.png";
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import Footer from "./Common/Footer";
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -38,7 +38,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % carouselData.length);
-    }, 3000);
+    }, 10000);
 
     return () => clearInterval(timer);
   }, [carouselData.length]);
@@ -50,16 +50,11 @@ const Home = () => {
 
   return (
     <div className="container">
-      <Navbar />
       <div className="box1">
         <img src={marsB} alt="Mars Image" />
         <div className="carousel-shadowbox">
           <TransitionGroup>
-            <CSSTransition
-              key={currentSlide}
-              timeout={500}
-              classNames="slide"
-            >
+            <CSSTransition key={currentSlide} timeout={500} classNames="slide">
               <ShadowBox
                 heading={carouselData[currentSlide].heading}
                 text={carouselData[currentSlide].text}
@@ -96,42 +91,35 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="upcoming-section">
-        <h1 id="head">UP COMING</h1>
-        <div className="upcoming-content">
-          <UpcomingCard
-            title="Streaming on Aevumjagut"
-            description="Visit Now"
-            img={UpcomingImg1}
-          />
-          <div className="blogs">
-            <h2>Latest Blogs</h2>
-            <div className="blog-item">
-              <span>Aevumjagut Full Movie 2024</span>
-            </div>
-            <div className="blog-item">
-              <span>Mounam</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <UpcomingCard />
 
       <div className="how-we-work">
         <h1>HOW WE WORK</h1>
-        <p>
-          Mars Movie Productions is designed to provide end-to-end support to
-          the Film Field Aspirants in any vertical of film making. We at Mars
-          believe that the industry is in dire need of the following precepts to
-          bring in a new era...
-        </p>
-        <div className="project-cards">
-          <div className="project-card">
-            <img src={calleVapor} alt="Calle Vapor" />
-            <p>Calle Vapor</p>
-          </div>
-          <div className="project-card">
-            <img src={meeMeemulu} alt="Mee Meemulu" />
-            <p>Mee Meemulu</p>
+        <div className="work-container">
+          <p>
+            Mars Movie Productions is designed to provide an end-to-end support
+            to the Film Field Aspirants in any vertical of film making. We @
+            Mars believe that the industry is in the dire need of the following
+            precepts to bring in a new era. Transparency : Everything is kept
+            open for the aspirants to see what is happening to them and their
+            talents and resources. Nothing is hidden. One can see the stages of
+            life cycle of their investment - be it money or talent or resource.
+            Optimized process: Technology is developed to ensure that every
+            effort is best shaped, resources optimally utilized, timelines kept,
+            value-diminishing processes removed, and wastage minimized. Every
+            nickel and every second an aspirant invests in his dream project
+            here is put to the best use so much so that the marketable output of
+            his investment is clearly visible.
+          </p>
+          <div className="project-cards">
+            <div className="project-card">
+              <img src={calleVapor} alt="Calle Vapor" />
+              <p>Calle Vapor</p>
+            </div>
+            <div className="project-card">
+              <img src={meeMeemulu} alt="Mee Meemulu" />
+              <p>Mee Meemulu</p>
+            </div>
           </div>
         </div>
       </div>
