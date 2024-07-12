@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Home.css";
+import Footer from "./Footer";
 import Navbar from "./home/Navbar";
 import marsB from "../assets/mars.png";
 import cameraCrew from "../assets/team.png";
@@ -122,26 +123,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      <div className="footer">
-        <div className="social-icons">
-          <a href="#">
-            <i className="fab fa-youtube"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-facebook"></i>
-          </a>
-        </div>
+      <div data-aos="fade-up">
+        <Footer></Footer>
       </div>
+      
     </div>
   );
 };

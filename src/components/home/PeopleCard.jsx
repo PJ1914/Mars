@@ -2,6 +2,7 @@ import React from "react";
 import "./peopleCard.css";
 
 export default function PeopleCard({ name, sub, text, img }) {
+
   return (
     <div className="nextpage">
       <div className="card-2">
@@ -16,4 +17,5 @@ export default function PeopleCard({ name, sub, text, img }) {
       </div>
     </div>
   );
+
 }
